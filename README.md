@@ -1,35 +1,35 @@
 # Simbad Entity Relation Diagram
 ```mermaid
 erDiagram
-    otype }o..o{ Basic : ""
-    ids }o..o{ Basic : ""
-    otypes }o..o{ Basic : ""
-    otypedef }o..o{ Otype : ""
-    otypedef }o..o{ Basic : ""
-    ident }o..o{ Basic : ""
-    flux }o..o{ Basic : ""
-    flux }o..o{ Filter : ""
-    allfluxes }o..o{ Basic : ""
-    hasRef }o..o{ Ref : ""
-    hasRef }o..o{ Basic : ""
-    author }o..o{ Ref : ""
-    distance }o..o{ Basic : ""
-    diameter }o..o{ Basic : ""
-    Fe_h }o..o{ Basic : ""
-    iso }o..o{ Basic : ""
-    iue }o..o{ Basic : ""
-    mk }o..o{ Basic : ""
-    plx }o..o{ Basic : ""
-    pm }o..o{ Basic : ""
-    rot }o..o{ Basic : ""
-    var }o..o{ Basic : ""
-    velocities }o..o{ Basic : ""
-    xmm }o..o{ Basic : ""
-    herschel }o..o{ Basic : ""
-    biblio }o..o{ Basic : ""
-    Keywords }o..o{ Ref : ""
-    ref }o..o{ Journal : ""
-    allfluxes {
+    OTYPE }o..o{ BASIC : ""
+    IDS }o..o{ BASIC : ""
+    OTYPES }o..o{ BASIC : ""
+    OTYPEDEF }o..o{ OTYPE : ""
+    OTYPEDEF }o..o{ BASIC : ""
+    IDENT }o..o{ BASIC : ""
+    FLUX }o..o{ BASIC : ""
+    FLUX }o..o{ FILTER : ""
+    ALLFLUXES }o..o{ BASIC : ""
+    HASREF }o..o{ REF : ""
+    HASREF }o..o{ BASIC : ""
+    AUTHOR }o..o{ REF : ""
+    MESDISTANCE }o..o{ BASIC : ""
+    MESDIAMETER }o..o{ BASIC : ""
+    MESFE_H }o..o{ BASIC : ""
+    MESISO }o..o{ BASIC : ""
+    MESIUE }o..o{ BASIC : ""
+    MK }o..o{ BASIC : ""
+    MESPLX }o..o{ BASIC : ""
+    MESPM }o..o{ BASIC : ""
+    MESROT }o..o{ BASIC : ""
+    MESVAR }o..o{ BASIC : ""
+    MESVELOCITIES }o..o{ BASIC : ""
+    MESXMM }o..o{ BASIC : ""
+    MESHERSCHEL }o..o{ BASIC : ""
+    BIBLIO }o..o{ BASIC : ""
+    KEYWORDS }o..o{ REF : ""
+    REF }o..o{ JOURNAL : ""
+    ALLFLUXES {
         DOUBLE J  ""
         DOUBLE U  ""
         DOUBLE B  ""
@@ -46,16 +46,16 @@ erDiagram
         DOUBLE z_  ""
         DOUBLE G  ""
 }
-    alltypes {
+    ALLTYPES {
         CLOB otypes  "List of all object types concatenated with pipe"
         BIGINT oidref  "Object internal identifier"
 }
-    author {
+    AUTHOR {
         BIGINT oidbibref  "Bibcode internal identifier"
         VARCHAR name  "Author of a bibliographical reference"
         SMALLINT pos  "Position of the author in the bib ref"
 }
-    basic {
+    BASIC {
         BIGINT oid  "Object internal identifier"
         INTEGER nbref  "number of references"
         SMALLINT ra_prec  "Right ascension precision"
@@ -121,20 +121,20 @@ erDiagram
         DOUBLE dec PK "Declination"
         VARCHAR otype_txt PK "Object type"
 }
-    biblio {
+    BIBLIO {
         BIGINT oidref  "Object internal identifier"
         TEXT biblio  "List of Bibcodes separated with a pipe"
 }
-    cat {
+    CAT {
         VARCHAR cat_name  "Catalogue name"
         INTEGER size  "Number of objects of the Catalogue in SIMBAD"
 }
-    filter {
+    FILTER {
         UNICODECHAR description  "flux filter description"
         VARCHAR filtername  "flux filter name"
         VARCHAR unit  "physical unit name"
 }
-    flux {
+    FLUX {
         BIGINT oidref  "Object internal identifier"
         VARCHAR filter  "flux filter name"
         SMALLINT flux_prec  "flux precision"
@@ -144,38 +144,38 @@ erDiagram
         CHAR bibcode  "flux reference"
         REAL flux  ""
 }
-    h_link {
+    H_LINK {
         CHAR link_bibcode  "link reference"
         BIGINT parent  "parent oid"
         BIGINT child  "child oid"
         SMALLINT membership  "membership probability"
 }
-    has_ref {
+    HAS_REF {
         BIGINT oidbibref  "Bibcode internal identifier"
         BIGINT oidref  "Object internal identifier"
         VARCHAR ref_raw_id  "id like it appears in the article"
         SMALLINT ref_flag  "flag"
         SMALLINT obj_freq  "flag"
 }
-    ident {
+    IDENT {
         BIGINT oidref  "Object internal identifier"
         VARCHAR id  "Identifier"
 }
-    ids {
+    IDS {
         CLOB ids  "List of all identifiers concatenated with pipe"
         BIGINT oidref  "Object internal identifier"
 }
-    journals {
+    JOURNALS {
         VARCHAR journal  "Abbreviation for the journal"
         VARCHAR years  "Range of years of this journal in the database"
         VARCHAR name  "Full name of the journal"
 }
-    keywords {
+    KEYWORDS {
         UNICODECHAR keyword  "Keyword text and link"
         BIGINT oidbibref  "Object internal identifier of reference"
         INTEGER position  "Position of the keyword in the publication"
 }
-    mesDiameter {
+    MESDIAMETER {
         BIGINT oidref  "Object internal identifier"
         SMALLINT mespos  "Position of a measurement in a list of measurements"
         DOUBLE diameter  "Diameter value"
@@ -188,7 +188,7 @@ erDiagram
         CHAR method  "calculation method"
         CHAR bibcode  "measurement bibcode"
 }
-    mesDistance {
+    MESDISTANCE {
         BIGINT oidref  "Object internal identifier"
         SMALLINT mespos  "Position of a measurement in a list of measurements"
         DOUBLE dist  "Distance value"
@@ -202,7 +202,7 @@ erDiagram
         CHAR method  "distance calculation method"
         CHAR bibcode  "measurement bibcode"
 }
-    mesFe_h {
+    MESFE_H {
         BIGINT oidref  "Object internal identifier"
         SMALLINT mespos  "Position of a measurement in a list of measurements"
         INTEGER teff  "Effective Temperature"
@@ -215,14 +215,14 @@ erDiagram
         CHAR catno  "Star in the Cayrel et al. (1997A&AS..124..299C) compilation"
         CHAR bibcode  "measurement bibcode"
 }
-    mesHerschel {
+    MESHERSCHEL {
         CHAR alpha  "Right Ascension J2000"
         CHAR delta  "Declination J2000"
         SMALLINT mespos  "Position of a measurement in a list of measurements"
         CHAR obsid  "Observation identifier"
         BIGINT oidref  "Object internal identifier"
 }
-    mesISO {
+    MESISO {
         BIGINT oidref  "Object internal identifier"
         SMALLINT mespos  "Position of a measurement in a list of measurements"
         CHAR obsid  "Observation identifier"
@@ -231,7 +231,7 @@ erDiagram
         DOUBLE dec  "Declination"
         SMALLINT dec_prec  "Precision (# of decimal positions) associated with the column dec"
 }
-    mesIUE {
+    MESIUE {
         BIGINT oidref  "Object internal identifier"
         SMALLINT mespos  "Position of a measurement in a list of measurements"
         CHAR name  "Homogenized Name"
@@ -254,7 +254,7 @@ erDiagram
         CHAR flag  "Flag"
         CHAR bibcode  "measurement bibcode"
 }
-    mesPLX {
+    MESPLX {
         BIGINT oidref  "Object internal identifier"
         SMALLINT mespos  "Position of a measurement in a list of measurements"
         REAL plx  "Parallaxe"
@@ -263,7 +263,7 @@ erDiagram
         CHAR obscode  "Observatory code"
         CHAR bibcode  "measurement bibcode"
 }
-    mesPM {
+    MESPM {
         BIGINT oidref  "Object internal identifier"
         SMALLINT mespos  "Position of a measurement in a list of measurements"
         REAL pmra  "Proper motion R.A."
@@ -277,7 +277,7 @@ erDiagram
         CHAR coosystem  "coordinates system designation"
         CHAR bibcode  "measurement bibcode"
 }
-    mesRot {
+    MESROT {
         BIGINT oidref  "Object internal identifier"
         SMALLINT mespos  "Position of a measurement in a list of measurements"
         CHAR upvsini  "Upper value of Vsini"
@@ -289,7 +289,7 @@ erDiagram
         CHAR qual  "Quality"
         CHAR bibcode  "measurement bibcode"
 }
-    mesSpT {
+    MESSPT {
         BIGINT oidref  "Object internal identifier"
         SMALLINT mespos  "Position of a measurement in a list of measurements"
         CHAR dispsystem  "dispersive system"
@@ -297,7 +297,7 @@ erDiagram
         CHAR sptype  "MK/MSS spectral type"
         CHAR bibcode  "measurement bibcode"
 }
-    mesVar {
+    MESVAR {
         DOUBLE period  "Period"
         BIGINT oidref  "Object internal identifier"
         SMALLINT mespos  "Position of a measurement in a list of measurements"
@@ -322,7 +322,7 @@ erDiagram
         CHAR r_raisingTime  "Uncertainty flag on raising time"
         CHAR bibcode  "measurement bibcode"
 }
-    mesVelocities {
+    MESVELOCITIES {
         BIGINT oidref  "Object internal identifier"
         SMALLINT mespos  "Position of a measurement in a list of measurements"
         CHAR velType  "velocity type (v, z or cz)"
@@ -344,12 +344,12 @@ erDiagram
         CHAR origin  "Origin of the radial velocity"
         CHAR bibcode  "measurement bibcode"
 }
-    mesXmm {
+    MESXMM {
         BIGINT oidref  "Object internal identifier"
         SMALLINT mespos  "Position of a measurement in a list of measurements"
         CHAR obsid  "Observation identifier"
 }
-    otypedef {
+    OTYPEDEF {
         VARCHAR path  "Otype path in the hierarchical classification"
         VARCHAR otype PK "Object type"
         VARCHAR label  "Object type, compact label string"
@@ -359,13 +359,13 @@ erDiagram
         UNICODECHAR comment  "Additional comment"
         UNICODECHAR otype_longname  "(DEPRECATED) Object type, full description string"
 }
-    otypes {
+    OTYPES {
         BIGINT oidref  "Object internal identifier"
         VARCHAR(30) origin  "explanation of origin of this type"
         VARCHAR otype  "Object type"
         VARCHAR(10) otype_txt  "Object type"
 }
-    ref {
+    REF {
         BIGINT oidbib  "Bibcode internal identifier"
         CHAR bibcode  "Bibcode"
         SMALLINT year  "Publication year"
