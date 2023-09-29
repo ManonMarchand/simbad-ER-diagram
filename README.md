@@ -1,5 +1,6 @@
 # Simbad Entity Relation Diagram
 ```mermaid
+%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
 erDiagram
     OTYPE }o..o{ BASIC : ""
     IDS }o..o{ BASIC : ""
