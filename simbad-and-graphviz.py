@@ -33,7 +33,7 @@ measurement_tables = simbadtap.run_sync(query).to_table()
 
 simbad_er = graphviz.Graph("Simbad Relational Database", format='svg', engine="neato")
 simbad_er.attr('node', shape='box', penwidth='6', style='filled', color='lightgray')
-simbad_er.attr('graph', splines="curved", overlap="false", mode='major', esep='+4', sep='3')
+simbad_er.attr('graph', splines="polyline", overlap="false", mode='major', esep='+4', sep='3')
 simbad_er.attr('edge', color='lightgray', penwidth='7', labelOverlay='100%')
 
 #----------------------------------------

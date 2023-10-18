@@ -1,6 +1,6 @@
 graph "Simbad Relational Database" {
 	node [color=lightgray penwidth=6 shape=box style=filled]
-	graph [esep="+4" mode=major overlap=false sep=3 splines=curved]
+	graph [esep="+4" mode=major overlap=false sep=3 splines=polyline]
 	edge [color=lightgray labelOverlay="100%" penwidth=7]
 	"Measurement tables" [label="{mesHerschel | mesXmm | mesVelocities | mesVar | mesRot | mesPM | mesPLX | mesIUE | mesISO | mesFe_h | mesDiameter | mesDistance | mesSpT }" shape=record]
 	basic -- "Measurement tables" [color="#9EADC8" tooltip="oid:oidref"]
