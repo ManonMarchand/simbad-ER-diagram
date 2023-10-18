@@ -52,7 +52,7 @@
 <g id="edge1" class="edge">
 <title>basic&#45;&#45;Measurement tables</title>
 <g id="a_edge1"><a xlink:title="oid:oidref">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M262.36,-525.41C178.81,-528.33 145.89,-528.89 116.23,-523.83"/>
+<path fill="none" stroke="#9eadc8" stroke-width="7" d="M262.36,-525.41C178.81,-528.33 145.89,-528.89 116.23,-523.83"/>
 </a>
 </g>
 </g>
@@ -69,7 +69,7 @@
 <g id="edge8" class="edge">
 <title>allfluxes&#45;&#45;basic</title>
 <g id="a_edge8"><a xlink:title="oidref:oid">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M215.4,-319.41C208.11,-405.37 212.09,-417.39 276.61,-503.48"/>
+<path fill="none" stroke="#fe9599" stroke-width="7" d="M215.4,-319.41C208.11,-405.37 212.09,-417.39 276.61,-503.48"/>
 </a>
 </g>
 </g>
@@ -86,7 +86,7 @@
 <g id="edge17" class="edge">
 <title>alltypes&#45;&#45;basic</title>
 <g id="a_edge17"><a xlink:title="oidref:oid">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M256.39,-771.23C240.51,-699.35 243.27,-684.78 286.01,-544.93"/>
+<path fill="none" stroke="#fe9599" stroke-width="7" d="M256.39,-771.23C240.51,-699.35 243.27,-684.78 286.01,-544.93"/>
 </a>
 </g>
 </g>
@@ -112,7 +112,7 @@
 <g id="edge11" class="edge">
 <title>author&#45;&#45;ref</title>
 <g id="a_edge11"><a xlink:title="oidbibref:oidbib">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M855.29,-785.65C851.89,-729.5 846.08,-715.33 790.1,-605.63"/>
+<path fill="none" stroke="#c7ffda" stroke-width="7" d="M855.29,-785.65C851.89,-729.5 846.08,-715.33 790.1,-605.63"/>
 </a>
 </g>
 </g>
@@ -129,7 +129,7 @@
 <g id="edge14" class="edge">
 <title>biblio&#45;&#45;basic</title>
 <g id="a_edge14"><a xlink:title="oidref:oid">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M165.43,-740.11C183.47,-678.88 192.39,-664.48 277.39,-545.26"/>
+<path fill="none" stroke="#f0a8ed" stroke-width="7" d="M165.43,-740.11C183.47,-678.88 192.39,-664.48 277.39,-545.26"/>
 </a>
 </g>
 </g>
@@ -164,7 +164,7 @@
 <g id="edge6" class="edge">
 <title>flux&#45;&#45;basic</title>
 <g id="a_edge6"><a xlink:title="oidref:oid">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M312.42,-257.52C254.05,-366.19 253.02,-378.82 286.62,-503.37"/>
+<path fill="none" stroke="#fdd791" stroke-width="7" d="M312.42,-257.52C254.05,-366.19 253.02,-378.82 286.62,-503.37"/>
 </a>
 </g>
 </g>
@@ -172,7 +172,7 @@
 <g id="edge7" class="edge">
 <title>flux&#45;&#45;filter</title>
 <g id="a_edge7"><a xlink:title="filter:filtername">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M317.97,-215.9C287.01,-104.81 284.02,-89.91 290.9,-38.74"/>
+<path fill="none" stroke="#f4b6c2" stroke-width="7" d="M317.97,-215.9C287.01,-104.81 284.02,-89.91 290.9,-38.74"/>
 </a>
 </g>
 </g>
@@ -189,7 +189,7 @@
 <g id="edge12" class="edge">
 <title>h_link&#45;&#45;basic</title>
 <g id="a_edge12"><a xlink:title="parent:oid">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M132.34,-338.44C160.95,-378.22 232.1,-463.95 269.19,-503.59"/>
+<path fill="none" stroke="#fec1a7" stroke-width="7" d="M132.34,-338.44C160.95,-378.22 232.1,-463.95 269.19,-503.59"/>
 </a>
 </g>
 </g>
@@ -197,7 +197,7 @@
 <g id="edge13" class="edge">
 <title>h_link&#45;&#45;basic</title>
 <g id="a_edge13"><a xlink:title="child:oid">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M143.38,-338.35C180.5,-378.04 251.6,-463.71 280.17,-503.45"/>
+<path fill="none" stroke="#4ce0b3" stroke-width="7" d="M143.38,-338.35C180.5,-378.04 251.6,-463.71 280.17,-503.45"/>
 </a>
 </g>
 </g>
@@ -214,7 +214,7 @@
 <g id="edge10" class="edge">
 <title>has_ref&#45;&#45;basic</title>
 <g id="a_edge10"><a xlink:title="oidref:oid">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M519.79,-541.56C407.25,-567.24 388.04,-567.6 322.01,-538.01"/>
+<path fill="none" stroke="#9eadc8" stroke-width="7" d="M519.79,-541.56C407.25,-567.24 388.04,-567.6 322.01,-538.01"/>
 </a>
 </g>
 </g>
@@ -222,7 +222,7 @@
 <g id="edge9" class="edge">
 <title>has_ref&#45;&#45;ref</title>
 <g id="a_edge9"><a xlink:title="oidbibref:oidbib">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M593.29,-547.58C684.61,-583.42 703.87,-588.83 749.68,-586.69"/>
+<path fill="none" stroke="#fff196" stroke-width="7" d="M593.29,-547.58C684.61,-583.42 703.87,-588.83 749.68,-586.69"/>
 </a>
 </g>
 </g>
@@ -239,7 +239,7 @@
 <g id="edge5" class="edge">
 <title>ident&#45;&#45;basic</title>
 <g id="a_edge5"><a xlink:title="oidref:oid">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M404.71,-382.73C329.21,-444.22 318.87,-455.68 300.19,-503.59"/>
+<path fill="none" stroke="#f0a8ed" stroke-width="7" d="M404.71,-382.73C329.21,-444.22 318.87,-455.68 300.19,-503.59"/>
 </a>
 </g>
 </g>
@@ -256,7 +256,7 @@
 <g id="edge2" class="edge">
 <title>ids&#45;&#45;basic</title>
 <g id="a_edge2"><a xlink:title="oidref:oid">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M106.35,-677.79C142.85,-640.84 160.48,-626.54 265.35,-545.24"/>
+<path fill="none" stroke="#c7ffda" stroke-width="7" d="M106.35,-677.79C142.85,-640.84 160.48,-626.54 265.35,-545.24"/>
 </a>
 </g>
 </g>
@@ -282,7 +282,7 @@
 <g id="edge15" class="edge">
 <title>keywords&#45;&#45;ref</title>
 <g id="a_edge15"><a xlink:title="oidbibref:oidbib">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M936.73,-623.08C908.88,-620.75 883.3,-614.12 809.1,-593.18"/>
+<path fill="none" stroke="#fdd791" stroke-width="7" d="M936.73,-623.08C908.88,-620.75 883.3,-614.12 809.1,-593.18"/>
 </a>
 </g>
 </g>
@@ -299,7 +299,7 @@
 <g id="edge4" class="edge">
 <title>otypedef&#45;&#45;basic</title>
 <g id="a_edge4"><a xlink:title="otype:otype">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M356.77,-724.41C307.85,-673.14 304.07,-658.09 294.14,-545.34"/>
+<path fill="none" stroke="#4ce0b3" stroke-width="7" d="M356.77,-724.41C307.85,-673.14 304.07,-658.09 294.14,-545.34"/>
 </a>
 </g>
 </g>
@@ -316,7 +316,7 @@
 <g id="edge3" class="edge">
 <title>otypedef&#45;&#45;otypes</title>
 <g id="a_edge3"><a xlink:title="otype:otype">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M385.02,-724.15C392.75,-704.4 398.45,-690.13 419.89,-636.57"/>
+<path fill="none" stroke="#fec1a7" stroke-width="7" d="M385.02,-724.15C392.75,-704.4 398.45,-690.13 419.89,-636.57"/>
 </a>
 </g>
 </g>
@@ -324,7 +324,7 @@
 <g id="edge18" class="edge">
 <title>otypes&#45;&#45;basic</title>
 <g id="a_edge18"><a xlink:title="oidref:oid">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M393.74,-607.32C344.05,-594.24 333.28,-585.98 305.96,-545.14"/>
+<path fill="none" stroke="#fff196" stroke-width="7" d="M393.74,-607.32C344.05,-594.24 333.28,-585.98 305.96,-545.14"/>
 </a>
 </g>
 </g>
@@ -332,7 +332,7 @@
 <g id="edge16" class="edge">
 <title>ref&#45;&#45;journals</title>
 <g id="a_edge16"><a xlink:title="journal:journal">
-<path fill="none" stroke="lightgray" stroke-width="7" d="M809.39,-564.41C889.46,-509.41 897.97,-497.66 917.84,-425.16"/>
+<path fill="none" stroke="#f4b6c2" stroke-width="7" d="M809.39,-564.41C889.46,-509.41 897.97,-497.66 917.84,-425.16"/>
 </a>
 </g>
 </g>
