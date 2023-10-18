@@ -52,4 +52,5 @@ with open("README.md", "w+") as out:
         for line in group:
             out.write(f"""        {line["datatype"]} {line["column_name"]} {"PK" if line["principal"] else ""} "{line["description"]}"\n""")
         out.write("}\n")
+    # end of the mermaid diagram
     out.write("```")
