@@ -36,7 +36,9 @@ simbad_er.attr('node', shape='box', penwidth='6', style='filled', color='lightgr
 simbad_er.attr('graph', splines="curved", overlap="false", mode='major', esep='+4', sep='3')
 simbad_er.attr('edge', color='lightgray', penwidth='7', labelOverlay='100%')
 
+#----------------------------------------
 # Add the subgraph for measurement tables
+#----------------------------------------
 
 mes_html_table = "{"
 
@@ -50,6 +52,9 @@ mes_html_table += "}"
 simbad_er.node("Measurement tables", label=mes_html_table, shape="record")
 simbad_er.edge("basic", "Measurement tables", tooltip="oid:oidref", color=next(colors))
 
+#--------------------------------
+# Add the normal tables and nodes
+#--------------------------------
 
 for table in tables:
     simbad_er.node(str(table["table_name"]), tooltip=str(table["description"]))
@@ -61,5 +66,9 @@ for link in links:
                    color=c,
                    #headlabel=f"<<table border='0' cellborder='0'><tr><td bgcolor='white'>{link["from_column"]}:{link["target_column"]}</td></tr></table>>"
                    )
+
+#----------------
+# Generate output
+#----------------
 
 simbad_er.render("./simbad-er")
