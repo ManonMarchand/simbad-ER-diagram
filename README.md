@@ -379,4 +379,7 @@ erDiagram
         INTEGER nbobject  "Number of objects studied in"
         UNICODECHAR abstract  "(revisited) Abstract of published paper"
 }
+
 ```
+
+![simbad-er](simbad-er.svg)
