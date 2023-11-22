@@ -33,12 +33,14 @@ measurement_tables = simbadtap.run_sync(query).to_table()
 
 simbad_er = graphviz.Graph("Simbad Relational Database", format='svg', engine="neato")
 simbad_er.attr('node', shape='box', penwidth='6', style='filled', color='lightgray')
-simbad_er.attr('graph', splines="polyline", overlap="false", mode='major', esep='+4', sep='3')
+simbad_er.attr('graph', splines="polyline", overlap="false", mode='major', esep='+0', sep='0')
 simbad_er.attr('edge', color='lightgray', penwidth='7', labelOverlay='100%')
 
 #----------------------------------------
 # Add the subgraph for measurement tables
 #----------------------------------------
+
+fontsize = "16"
 
 mes_html_table = "{"
 
@@ -49,7 +51,7 @@ for table in measurement_tables:
 mes_html_table = mes_html_table[:-2]
 mes_html_table += "}"
 
-simbad_er.node("Measurement tables", label=mes_html_table, shape="record")
+simbad_er.node("Measurement tables", label=mes_html_table, shape="record", fontsize=fontsize)
 simbad_er.edge("basic", "Measurement tables", tooltip="oid:oidref", color=next(colors))
 
 #--------------------------------
@@ -57,7 +59,7 @@ simbad_er.edge("basic", "Measurement tables", tooltip="oid:oidref", color=next(c
 #--------------------------------
 
 for table in tables:
-    simbad_er.node(str(table["table_name"]), tooltip=str(table["description"]))
+    simbad_er.node(str(table["table_name"]), tooltip=str(table["description"]), fontsize=fontsize)
 
 for link in links:
     c = next(colors)
