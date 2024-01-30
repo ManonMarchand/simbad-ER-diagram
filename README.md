@@ -1,4 +1,11 @@
 # Simbad Entity Relation Diagram
+
+This repository explores two softwares: 
+
+## Mermaid 
+
+https://github.com/mermaid-js/mermaid
+
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
 erDiagram
@@ -381,5 +388,9 @@ erDiagram
 }
 
 ```
+
+## And graphviz
+
+https://gitlab.com/graphviz/graphviz
 
 ![simbad-er](simbad-er.svg)
