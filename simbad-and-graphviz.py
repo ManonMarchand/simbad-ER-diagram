@@ -41,7 +41,7 @@ simbad_er.attr('edge', color='lightgray', penwidth='7', labelOverlay='100%')
 #----------------------------------------
 
 fontsize = "16"
-mes_html_table = f"\{{' | '.join(measurement_tables["table_name"])}\}"
+mes_html_table = "{" + ' | '.join(measurement_tables['table_name']) + " }"
 
 simbad_er.node("Measurement tables", label=mes_html_table, shape="record", fontsize=fontsize)
 simbad_er.edge("basic", "Measurement tables", tooltip="oid:oidref", color=next(colors))
